@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 24px;
+  max-width: 1194px;
+}
+
+.content {
+  padding-bottom: 94px;
+}
+
+.content-box {
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.content-main {
+  flex-grow: 1;
+}
+
+.content-main__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  text-align: left;
+  color: #000000;
+}
+
+.content-main__cards {
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 38px;
+}
+
+.content-movie {
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 28px;
+}
+
+.content-movie__image,
+.content-movie__description {
+  width: calc((100% - 28px) / 2);
+}
+
+.content-movie__image {
+  justify-content: center;
+}
+
+.content-movie__description {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.content-movie__image img {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+}
+
+.content-title {
+  margin-bottom: 3px;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.content-title h1,
+.content-title p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: left;
+  color: #000000;
+}
+
+.content-title h1 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.content-descr {
+  margin-bottom: 2px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+  color: #868686;
+}
+
+.content-rating {
+  margin-bottom: 29px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  text-align: left;
+  color: #04a31e;
+}
+
+.content-text {
+  margin-bottom: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  color: #000000;
+}
+
+.content-text:last-child {
+  margin-bottom: 0;
+}
+
+.content-movie__description__controls button {
+  padding: 16px 98px 17px 98px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #ff4949;
+}
+
+@media (max-width: 991px) {
+  .content-movie {
+    flex-direction: column;
+  }
+
+  .content-movie__image,
+  .content-movie__description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-box {
+    flex-direction: column;
+  }
+}
