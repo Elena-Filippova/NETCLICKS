@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<a href="./movie.html" class="card">
+<a [routerLink]="["./movie", movie.id]" class="card">
   <div class="card__image">
-    <img src="./img/movie.png" alt="Movie">
+    <img [src]="movie.image" [alt]="movie.title">
   </div>
   <div class="card__title flex">
-    <h5>{{title}},</h5>
-    <span>The Martian 2015</span>
+    <h5>{{ movie.title }},</h5>
+    <span>{{ movie.originalTitle }}</span>
   </div>
   <p class="card__description">
-    Фантастика, приключения
+    {{ movie.category }}
   </p>
-  <p class="card__rating">7.8</p>
+  <p class="card__rating">{{ movie.rating }}</p>
 </a>

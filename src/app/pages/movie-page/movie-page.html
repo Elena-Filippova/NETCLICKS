@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<section class="content">
+  <div class="container">
+    <div class="content-box flex">
+      <div class="content-movie flex">
+        @if (movie) {
+          <div class="content-movie__image flex">
+            <img [src]="movie.image" [alt]="movie.title">
+          </div>
+          <div class="content-movie__description flex">
+            <div class="content-movie__description__content">
+              <div class="content-title flex">
+                <h1>
+                  {{ movie.title }},
+                </h1>
+                <p>
+                  {{ movie.originalTitle }}
+                </p>
+              </div>
+              <p class="content-descr">
+                {{ movie.category }}
+              </p>
+              <p class="content-rating">
+                {{ movie.rating }}
+              </p>
+              <p class="content-text">
+                {{ movie.description }}
+              </p>
+            </div>
+            <div class="content-movie__description__controls">
+              <button>
+                Смотреть
+              </button>
+            </div>
+          </div>
+        }
+      </div>
+      <app-sidebar></app-sidebar>
+    </div>
+  </div>
+</section>

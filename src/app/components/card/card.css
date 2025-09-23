@@ -1,5 +1,9 @@
-.card {
+:host {
   width: calc((100% - 60px) / 3);
+}
+
+.card {
+  width: 100%;
 }
 
 .card__image,
@@ -54,13 +58,13 @@
 }
 
 @media (max-width: 991px) {
-  .card {
-    width: calc((100% - 60px) / 2);
+  :host {
+      width: calc((100% - 60px) / 3);
   }
 }
 
 @media (max-width: 480px) {
-  .card {
+  :host {
     width: 100%;
   }
 }
